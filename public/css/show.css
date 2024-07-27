@@ -1,0 +1,74 @@
+/* bagian show.blade.php */
+.gambar-container {
+    height: 400px; /* Tinggi tetap untuk kontainer gambar */
+    display: flex; /* Mengaktifkan fitur flexbox */
+    justify-content: center; /* Memusatkan gambar secara horizontal */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang berlebih */
+    margin-bottom: 10px; /* Atur margin bawah jika perlu */
+    background-color: white; /* Warna latar belakang putih */
+}
+
+.gambar-artikel {
+    height: 100%; /* Mengisi tinggi kontainer */
+    width: auto; /* Lebar otomatis sesuai proporsi */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    display: block; /* Mengatasi masalah spasi tambahan */
+    background-color: white; /* Warna latar belakang putih */
+}
+
+.judul-artikel {
+    font-size: 2.5rem; /* Ukuran font besar */
+    font-weight: bold; /* Teks bold */
+    text-align: center; /* Teks di tengah */
+    margin-bottom: 1rem; /* Atur margin bawah */
+    color: black; /* Warna teks hitam */
+}
+
+/* Warna teks abu-abu untuk tag <p> */
+p {
+    color: #666; /* Warna abu-abu dengan kode hex */
+}
+
+/* Gaya untuk class .author */
+.author {
+    color: #666; /* Warna abu-abu dengan kode hex */
+    font-style: italic; /* Teks miring */
+}
+
+/* Responsif untuk layar kecil (misalnya, tablet dan smartphone) */
+@media (max-width: 768px) {
+    .judul-artikel {
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+    .gambar-container {
+        height: 250px; /* Tinggi gambar lebih kecil untuk layar kecil */
+    }
+    .gambar-artikel {
+        height: 100%; /* Tetap mengisi tinggi kontainer */
+    }
+}
+
+/* Gaya untuk pagination */
+.pagination-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-links .page-link {
+    color: #000;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.pagination-links .page-link:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination-links .active .page-link {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}

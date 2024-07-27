@@ -1,0 +1,190 @@
+/* Gaya untuk judul artikel */
+.judul {
+  text-align: center;
+  color: black; /* Warna teks hitam */
+  margin-bottom: 20px; /* Atur margin bawah */
+}
+
+/* Gaya untuk grid artikel */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tiga kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antara artikel */
+}
+
+.article {
+  background-color: #f0f0f0; /* Warna latar belakang artikel */
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.article img {
+  width: 100%; /* Gambar mengisi lebar artikel */
+  height: auto; /* Ketinggian disesuaikan */
+  border-radius: 8px; /* Sudut bulat pada gambar */
+  object-fit: cover; /* Gambar diatur agar tidak terdistorsi */
+}
+
+.article-content {
+  margin-top: 10px; /* Atur margin atas */
+}
+
+.article-title {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: black; /* Warna teks hitam */
+}
+
+.author {
+  font-style: italic;
+  color: black; /* Warna teks hitam */
+  margin-bottom: 8px;
+}
+
+.article-sentence {
+  margin-bottom: 10px;
+  color: black; /* Warna teks hitam */
+}
+
+.article-sentence a {
+  color: #3498db; /* Warna teks link */
+}
+
+.article-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Container untuk gambar artikel */
+.article-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.article-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.article-container:hover img {
+  transform: scale(1.05); /* Memperbesar gambar saat dihover */
+}
+
+/* Tambahan CSS untuk gambar artikel */
+.article-image img {
+  width: 350px; /* Lebar gambar tetap 350px */
+  height: auto; /* Ketinggian disesuaikan */
+  object-fit: contain; /* Gambar ditampilkan proporsional tanpa terpotong */
+}
+
+/* navbar */
+
+.navbar {
+  background-color: white !important; /* Warna latar belakang putih */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.navbar-left {
+  margin-right: auto; /* Menempatkan tombol Home di sebelah kiri */
+}
+
+.navbar-center {
+  flex-grow: 1; /* Memungkinkan elemen untuk mengisi ruang yang tersedia */
+  text-align: center; /* Posisi teks di tengah */
+}
+
+.navbar-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Contoh font yang keren */
+  font-size: 24px; /* Ukuran font */
+  color: black; /* Warna teks hitam */
+  margin: 0; /* Menghilangkan margin bawaan untuk p */
+  text-shadow: none; /* Menghilangkan efek bayangan */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black; /* Warna teks hitam */
+  padding: 10px 20px;
+  background-color: white; /* Warna latar belakang putih */
+}
+
+.navbar a:hover {
+  background-color: #e0e0e0; /* Warna hover abu-abu terang */
+}
+
+.navbar .active {
+  background-color: #e0e0e0; /* Warna aktif abu-abu terang */
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Media query untuk layar sangat kecil (xxs) */
+@media (max-width: 450px) {
+  .navbar {
+      padding: 6px 13px; /* Sesuaikan padding untuk layar kecil */
+  }
+
+  .navbar-title {
+      font-size: 16px; /* Ukuran font untuk layar kecil */
+  }
+
+  .navbar a {
+      padding: 6px 10px; /* Sesuaikan padding tombol untuk layar kecil */
+  }
+}
+
+/* Media query untuk layar lebih kecil dari 450px */
+@media (max-width: 350px) {
+  .navbar {
+      padding: 4px 10px; /* Sesuaikan padding untuk layar sangat kecil */
+  }
+
+  .navbar-title {
+      font-size: 14px; /* Ukuran font untuk layar sangat kecil */
+  }
+
+  .navbar a {
+      padding: 4px 8px; /* Sesuaikan padding tombol untuk layar sangat kecil */
+  }
+}
+
+/* FOOTER
+    #sp-footer2 {
+        display: flex;
+        justify-content: left;
+    } */
+
+/* Media query untuk layar sangat kecil (xxs) */
+@media (max-width: 425px) {
+  .article-grid {
+    grid-template-columns: 1fr; /* Satu kolom pada layar sangat kecil */
+  }
+}
+
+/* Media query untuk layar lebih kecil dari 375px */
+@media (max-width: 375px) {
+  .article-grid {
+    grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+  }
+}
+
+/* Media query untuk layar lebih kecil dari 350px */
+@media (max-width: 350px) {
+  .article-grid {
+    grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+  }
+}

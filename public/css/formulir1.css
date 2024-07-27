@@ -1,0 +1,41 @@
+.formulir1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; /* Warna latar belakang putih */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+
+.formulir1 a {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000; /* Teks berwarna hitam */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #FFFFFF; /* Ganti gradasi dengan warna putih */
+    border: 2px solid #000000; /* Garis pinggir berwarna hitam */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Tambahan bayangan */
+    transition: background-color 0.3s, color 0.3s; /* Perbarui transisi */
+}
+
+.formulir1 a:hover {
+    background-color: #f0f0f0; /* Warna latar belakang saat hover */
+    color: #000000; /* Warna teks saat hover */
+}
+
+/* Media query untuk layar kecil (sm) */
+@media (max-width: 576px) {
+    .formulir1 {
+        font-size: 14px; /* Sesuaikan ukuran font */
+    }
+
+    .formulir1 a {
+        font-size: 12px; /* Sesuaikan ukuran font */
+    }
+}
